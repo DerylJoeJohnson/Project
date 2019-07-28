@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+          
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12" style="">
+                    
+                        <form action="">
+                        <table class="table table borderless" >
+                            <tr>
+                                <td>Enter your name</td>
+                                <td><input type="Text" id="name" class = form-control required/></td>
+                            </tr>
+                            <tr>
+                                <td>Semester</td>
+                                <td><select name="sem" id="sem" required>
+                                    <option value="" class="form-control">Select Semester</option>
+                                    <option value="S1" class="form-control">Semester 1</option>
+                                    <option value="S2" class="form-control">Semester 2</option>
+                                    <option value="S3" class="form-control">Semester 3</option>
+                                    <option value="S4" class="form-control">Semester 4</option>
+                                    <option value="S5" class="form-control">Semester 5</option>
+                                    <option value="S6" class="form-control">Semester 6</option>
+                                    <option value="S7" class="form-control">Semester 7</option>
+                                    <option value="S8" class="form-control">Semester 8</option>
+                                </select></td>
+                                <td></td>
+                                <td>Exam Code</td>
+                                <td><input type="text" class="form-control" id="xc"required></td>
+                            </tr>
+                            <tr>
+                                <td>Subject Name :</td>
+                                <td><input type="text" class="form-control" id="sub1" required></td>
+                                <td></td>
+                                <td>Subject Mark Obtained :</td>
+                                <td><input type="number" class="form-control" max="150" id="M1" required></td>
+                                <td></td>
+                                <td>Subject Total Mark</td>
+                                <td><input type="number" value="" id="T1"></td>
+                        
+                            </tr>
+                            <tr>
+                                <td>Subject Name :</td>
+                                <td><input type="text" class="form-control" id="sub2" required></td>
+                                <td></td>
+                                <td>Subject Mark Obtained :</td>
+                                <td><input type="number" class="form-control" max="150" id="M2" required></td>
+                                <td></td>
+                                <td>Subject Total Mark</td>
+                                <td><input type="number" value="" id="T2"></td>
+                        
+                            </tr><tr>
+                                <td>Subject Name :</td>
+                                <td><input type="text" class="form-control" id="sub3" required></td>
+                                <td></td>
+                                <td>Subject Mark Obtained :</td>
+                                <td><input type="number" class="form-control" max="150" id="M3" required></td>
+                                <td></td>
+                                <td>Subject Total Mark</td>
+                                <td><input type="number" value="" id="T3" ></td>
+                        
+                            </tr><tr>
+                                <td>Subject Name :</td>
+                                <td><input type="text" class="form-control" id="sub4" required></td>
+                                <td></td>
+                                <td>Subject Mark Obtained :</td>
+                                <td><input type="number" class="form-control" max="150" id="M4" required></td>
+                                <td></td>
+                                <td>Subject Total Mark</td>
+                                <td><input type="number" value="" id="T4"></td>
+                        
+                            </tr><tr>
+                                <td>Subject Name :</td>
+                                <td><input type="text" class="form-control" id="sub5" required></td>
+                                <td></td>
+                                <td>Subject Mark Obtained :</td>
+                                <td><input type="number" class="form-control" max="150" id="M5" required></td>
+                                <td></td>
+                                <td>Subject Total Mark</td>
+                                <td><input type="number" value="" id="T5"></td>
+                        
+                            </tr><tr>
+                                <td>Subject Name :</td>
+                                <td><input type="text" class="form-control" id="sub6" required></td>
+                                <td></td>
+                                <td>Subject Mark Obtained :</td>
+                                <td><input type="number" class="form-control" max="150" id="M6" required></td>
+                                <td></td>
+                                <td>Subject Total Mark</td>
+                                <td><input type="number" value="" id="T6"></td>
+                        
+                            </tr>
+
+                            <tr>
+                                <td> </td>
+                                <td button type="button"  class="btn btn-success" onclick="marklist()">Generate Mark list</button></td>
+                            </tr>
+                           
+                        </table>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col col-4 col-sm-12">
+                                    <form action="">
+                                    <table class="table table-bordered border-right" style="width=100%">
+                                        <tr>
+                                            <td>Student Name :</td>
+                                            <td><p id="nam"></p></td>
+                                            <td></td>
+                                            <td>Semester :</td>
+                                            <td><p id="seme"></p></td>
+                                            <td></td>
+                                            <td>Exam Code :</td>
+                                            <td><p id="ec"></p></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="col col-3 col-sm-3">
+                                                <table class="table table-bordered">
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <td>Subject</td>
+                                                            <td>Marks obtained</td>
+                                                            <td>Total Marks</td>
+                                                            <td>grade</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><p id="su1"></p></td>
+                                                            <td><p id="mo1"></p></td>
+                                                            <td><p id="tm1"></p></td>
+                                                            <td><p id="g1"></p></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><p id="su2"></p></td>
+                                                                <td><p id="mo2"></p></td>
+                                                                <td><p id="tm2"></p></td>
+                                                                <td><p id="g2"></p></td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td><p id="su3"></p></td>
+                                                                    <td><p id="mo3"></p></td>
+                                                                    <td><p id="tm3"></p></td>
+                                                                    <td><p id="g3"></p></td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td><p id="su4"></p></td>
+                                                                        <td><p id="mo4"></p></td>
+                                                                        <td><p id="tm4"></p></td>
+                                                                        <td><p id="g4"></p></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                            <td><p id="su5"></p></td>
+                                                                            <td><p id="mo5"></p></td>
+                                                                            <td><p id="tm5"></p></td>
+                                                                            <td><p id="g5"></p></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                                <td><p id="su6"></p></td>
+                                                                                <td><p id="mo6"></p></td>
+                                                                                <td><p id="tm6"></p></td>
+                                                                                <td><p id="g6"></p></td>
+                                                                            </tr>   
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Status :</td>
+                                            <td><p id="status1"></p></td>
+                                        </tr>
+                                    </table>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        
+                    </form>
+                    <script src="./JS/read.js"></script>
+                    
+            </div> 
+        </div> 
+    </div>                     
+    
+</body>
+</html>
