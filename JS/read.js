@@ -1,6 +1,6 @@
 function   marklist()
-{
-
+{ 
+    
     var name=document.getElementById("name").value;
     document.getElementById("nam").innerHTML=name;
     var ec=document.getElementById("xc").value;
@@ -75,13 +75,14 @@ function   marklist()
        
         }
         var status='Pass';
-        
+        //var
     for (i=1;i<=6;i++)
     {
         if(g[i]=='F')
-        status='Fail';
-        break;
-        
+        {
+            status='Fail';
+            break;
+        }
         
     }
         

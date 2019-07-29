@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style> #bord{ 
+            border: 1px solid black;
+    }
+    </style>
           
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -41,10 +45,10 @@
                                 <td><input type="text" class="form-control" id="sub1" required></td>
                                 <td></td>
                                 <td>Subject Mark Obtained :</td>
-                                <td><input type="number" class="form-control" max="150" id="M1" required></td>
+                                <td><input type="number" class="form-control" max="150" id="M1" min="0" required></td>
                                 <td></td>
                                 <td>Subject Total Mark</td>
-                                <td><input type="number" value="" id="T1"></td>
+                                <td><input type="number" value="" id="T1" min="0"></td>
                         
                             </tr>
                             <tr>
@@ -52,50 +56,50 @@
                                 <td><input type="text" class="form-control" id="sub2" required></td>
                                 <td></td>
                                 <td>Subject Mark Obtained :</td>
-                                <td><input type="number" class="form-control" max="150" id="M2" required></td>
+                                <td><input type="number" class="form-control"  id="M2" min="0"required></td>
                                 <td></td>
                                 <td>Subject Total Mark</td>
-                                <td><input type="number" value="" id="T2"></td>
+                                <td><input type="number" value="" id="T2" min="0"></td>
                         
                             </tr><tr>
                                 <td>Subject Name :</td>
                                 <td><input type="text" class="form-control" id="sub3" required></td>
                                 <td></td>
                                 <td>Subject Mark Obtained :</td>
-                                <td><input type="number" class="form-control" max="150" id="M3" required></td>
+                                <td><input type="number" class="form-control" max="150" id="M3" min="0" required></td>
                                 <td></td>
                                 <td>Subject Total Mark</td>
-                                <td><input type="number" value="" id="T3" ></td>
+                                <td><input type="number" value="" id="T3" min="0" ></td>
                         
                             </tr><tr>
                                 <td>Subject Name :</td>
-                                <td><input type="text" class="form-control" id="sub4" required></td>
+                                <td><input type="text" class="form-control" id="sub4"  required></td>
                                 <td></td>
                                 <td>Subject Mark Obtained :</td>
-                                <td><input type="number" class="form-control" max="150" id="M4" required></td>
+                                <td><input type="number" class="form-control" max="150" id="M4" min="0"required></td>
                                 <td></td>
                                 <td>Subject Total Mark</td>
-                                <td><input type="number" value="" id="T4"></td>
+                                <td><input type="number" value="" id="T4" min="0"></td>
                         
                             </tr><tr>
                                 <td>Subject Name :</td>
                                 <td><input type="text" class="form-control" id="sub5" required></td>
                                 <td></td>
                                 <td>Subject Mark Obtained :</td>
-                                <td><input type="number" class="form-control" max="150" id="M5" required></td>
+                                <td><input type="number" class="form-control" max="150" id="M5" min="0" required></td>
                                 <td></td>
                                 <td>Subject Total Mark</td>
-                                <td><input type="number" value="" id="T5"></td>
+                                <td><input type="number" value="" id="T5" min="0"></td>
                         
                             </tr><tr>
                                 <td>Subject Name :</td>
                                 <td><input type="text" class="form-control" id="sub6" required></td>
                                 <td></td>
                                 <td>Subject Mark Obtained :</td>
-                                <td><input type="number" class="form-control" max="150" id="M6" required></td>
+                                <td><input type="number" class="form-control" max="150" id="M6" min="0" required></td>
                                 <td></td>
                                 <td>Subject Total Mark</td>
-                                <td><input type="number" value="" id="T6"></td>
+                                <td><input type="number" value="" id="T6" min="0"></td>
                         
                             </tr>
 
@@ -105,18 +109,20 @@
                             </tr>
                            
                         </table>
-                        <div class="container">
+                        <div class="container"   >     
+                            
                             <div class="row">
                                 <div class="col col-4 col-sm-12">
                                     <form action="">
-                                    <table class="table table-bordered border-right" style="width=100%">
+                                        <div id="bord" >
+                                    <table class="table table-bordered " >
                                         <tr>
                                             <td>Student Name :</td>
                                             <td><p id="nam"></p></td>
-                                            <td></td>
+                                           
                                             <td>Semester :</td>
                                             <td><p id="seme"></p></td>
-                                            <td></td>
+                                            
                                             <td>Exam Code :</td>
                                             <td><p id="ec"></p></td>
                                         </tr>
@@ -124,6 +130,7 @@
                                             <td></td>
                                             <td>
                                                 <div class="col col-3 col-sm-3">
+                                                    
                                                 <table class="table table-bordered">
                                                     <thead class="thead-dark">
                                                         <tr>
@@ -172,7 +179,8 @@
                                                                             </tr>   
                                                     </tbody>
                                                 </table>
-
+                                            </div>
+                                            </div>
                                             </div>
                                             </td>
                                         </tr>
@@ -180,7 +188,7 @@
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                            <td></td>
+                                            
                                             <td></td>
                                             <td>Status :</td>
                                             <td><p id="status1"></p></td>
